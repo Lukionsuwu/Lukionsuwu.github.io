@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo ivonne<3</title>
+    <style>
+        .body {
+            background-color: blueviolet;
+            text-align: center;
+        }
+
+        .body__tite {
+            color: white;
+        }
+        
+        .body__img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="body">
+<h1 class="body__tite">Te quiero con toda mi alma<3</h1>
+<img src="https://pbs.twimg.com/media/FkACS9JX0AAIIAe?format=jpg&name=large" alt="Foto de mi novia hermosa" class="body__img">
+<button id="carta">💌✉Un lindo texto✉💌<3</button>
+<button id="yes">Te dedico esta canción, corazón</button>
+<button id="no">Eres lo mejor que tengo<3</button>
+
+<script>
+    const botonSi = document.getElementById('yes');
+    const botonCarta = document.getElementById('carta');
+    const botonNo = document.getElementById('no');
+
+    const carta = () => {
+        alert('Todo lo que veras lo hice de corazón');
+        alert('Yo te quiero decir que soy para ti y tu eres para mi'); 
+        location.href = 'https://teamoivonneuwu.blogspot.com/2022/12/cartita.html'
+    }
+
+    const cancion = () => {
+        alert('✨💗Te dedico esta hermosa canción, mi vida💗✨');
+        alert('Pero antes que nada, quiero que recuerdes esto: 🥀Eres lo mejor que tengo, no se que haria sin ti, la verdad te amare por mucho tiempo y el dia que me dejes se me hara dificil olvidarte, corazón. Eres mi niña pequeña, te cuidare todo el tiempo que estes a mi lado y no te soltare la mano.🥀'); 
+        location.href = 'https://www.youtube.com/watch?v=s3plOCEQyeI'
+    }
+
+    const texto = () => {
+        botonNo.style.position = 'absolute';
+        botonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+        botonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+    }
+
+    botonCarta.addEventListener('click', carta);
+    botonSi.addEventListener('click', cancion);
+    botonNo.addEventListener('mouseover', texto);
+</script>
+</body>
+</html>
